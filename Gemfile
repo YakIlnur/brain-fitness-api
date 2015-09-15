@@ -18,6 +18,7 @@ gem 'active_model_serializers'
 gem 'interactor-rails'
 gem 'rack-cors', require: 'rack/cors'
 gem 'activeadmin', github: 'activeadmin'
+gem "active_admin_import" , github: "activeadmin-plugins/active_admin_import"
 
 group :development do
   gem 'letter_opener'
