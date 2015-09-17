@@ -17,8 +17,7 @@ gem 'dotenv-rails'
 gem 'active_model_serializers'
 gem 'interactor-rails'
 gem 'rack-cors', require: 'rack/cors'
-gem 'activeadmin', github: 'activeadmin'
-gem "active_admin_import" , github: "activeadmin-plugins/active_admin_import"
+gem 'activeadmin', '~> 1.0.0.pre1'
 
 group :development do
   gem 'letter_opener'

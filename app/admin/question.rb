@@ -1,5 +1,5 @@
 ActiveAdmin.register Question do
-  permit_params :category_id, :text, answer_variants_attributes: [:id, :text, :value, :_destroy => true]
+  permit_params :category_id, :text, answer_variants_attributes: [:id, :text, :value, _destroy: true]
 
   show do |question|
     attributes_table do
@@ -7,7 +7,9 @@ ActiveAdmin.register Question do
       row :category
       row :text
       question.answer_variants.each do |var|
-        row :answer do var.text end
+        row :answer do
+          var.text
+        end
       end
     end
   end
@@ -18,7 +20,7 @@ ActiveAdmin.register Question do
       f.input :text
       f.has_many :answer_variants, heading: 'Answer variants', allow_destroy: false, new_record: true do |a|
         a.input :text
-        a.input :value, label: "Right"
+        a.input :value, label: 'Right'
       end
     end
     f.actions

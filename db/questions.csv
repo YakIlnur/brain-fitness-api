@@ -1,2 +1,2 @@
-category_id, text, answer_variant_1, answer_variant_2, answer_variant_3, answer_variant_4
-1,"test,",a,b,c,d
+category_text, text, answer_variant_1, answer_variant_2, answer_variant_3, answer_variant_4
+Ruby,"test",a,b,c,d
