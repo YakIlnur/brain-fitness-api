@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
   devise_for :admin_users, ActiveAdmin::Devise.config
+  mount RailsAdmin::Engine => '/admin_r', as: 'rails_admin'
   ActiveAdmin.routes(self)
   scope defaults: { format: :json } do
     devise_for :users
